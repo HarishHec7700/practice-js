@@ -53,20 +53,20 @@
 
 // To calculate the total and average 
 
-let num=[],n,s=0,sum = 0,i,j;
-n=parseInt(prompt("Enter the total terms"))
-for (i = 0; i < n; i++) {
-    num[i]= parseFloat(prompt("Enter the numbers"));
-}
-for (j = 0; j < n; j++) {
-    sum=s+num[j];
-    s=sum;    
-}
-avg=sum/n;
-console.log(sum);
-document.write("the sum is ",sum);
-console.log(avg);
-document.write("the average is ",avg);
+// let num=[],n,s=0,sum = 0,i,j;
+// n=parseInt(prompt("Enter the total terms"))
+// for (i = 0; i < n; i++) {
+//     num[i]= parseFloat(prompt("Enter the numbers"));
+// }
+// for (j = 0; j < n; j++) {
+//     sum=sum+num[j];
+//     // s=sum;    
+// }
+// avg=sum/n;
+// console.log(sum);
+// document.write("the sum is ",sum);
+// console.log(avg);
+// document.write("the average is ",avg);
 
 // Find the given number is even or odd
 
@@ -113,3 +113,25 @@ document.write("the average is ",avg);
 
 // }
 
+// To arrange in ascending and descending order for 3 numbers 
+
+// let a,b,c;
+// a=parseInt(prompt("Enter the first number"));
+// b=parseInt(prompt("Enter the secound number"));
+// c=parseInt(prompt("Enter the third number"));
+
+// if (a<b) {
+//     if (b<c) {
+//         console.log(c);
+//         document.write("Third number is greater");
+//     } else {
+//         console.log(b);
+//         document.write("Secound number is greater");
+//     }
+// } else if(a<c) {
+//     console.log(c);
+//     document.write("Third number is greater");
+// } else{
+//     console.log(a);
+//     document.write(" First number is greater");
+// }
