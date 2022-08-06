@@ -104,13 +104,31 @@
 
 // To find the number is a multiple of 7 
 
-// let gn=parseInt(prompt("Enter the number to find whether is multiple of 7 or not"));
-// if(gn%7==0){
+// let gn2, gn1=parseInt(prompt("Enter the number to find whether is multiple of 7 or not"));
+// gn2=parseInt(prompt("Enter the number to find whether is multiple of 7 or not"));
+// if(gn1%7==0){
 //     document.write("The given number is multiple of 7");
 // }
 // else{
 //     document.write("The given number is an not multiple of 7");
+// }
+// if(gn2%7==0){
+//     document.write("The given number is multiple of 7");
+// }
+// else{
+//     document.write("The given number is an not multiple of 7");
+// }
+// if(gn1<gn2){
+//     console.log("The biggest number is ",gn2);
+//     document.write("The biggest number is ",gn2);
 
+// }else if(gn1==gn2){
+//     console.log("The biggest number is ",gn2);
+//     document.write("The biggest number is ",gn2);
+// }
+// else{
+//     console.log("The biggest number is ",gn1);
+//     document.write("The biggest number is ",gn1);
 // }
 
 // To arrange in ascending and descending order for 3 numbers 
@@ -135,3 +153,25 @@
 //     console.log(a);
 //     document.write(" First number is greater");
 // }
+
+// Factorial of a number
+
+// let fac=1,num,i;
+// num=parseInt(prompt("Enter the Number to find its Factorial"));
+// for (i = num; i>=1; i--) {
+//     fac=fac*i;    
+// }
+// console.log(fac);
+// document.write(fac);
+
+// Fibnocci series for n terms 
+
+let i,n,f,fb;
+fb=f=0;
+n=parseInt(prompt("Enter the nth term u need to find fibanocci series"));
+for (let i = 1; i<n; i++) {
+    fb=i+(i+1);
+    // f=fb;
+    console.log(fb);
+    document.write(fb);
+}
