@@ -202,22 +202,45 @@
 
 // 16. To find wheather the number is prime or not 
 
-// let n=parseInt(prompt("Enter the number to find whether it is prime or not"));
-// for (let i = 2; i <=n ; i++) {
+// let n=parseInt(prompt("Enter the number to find whether it is prime or not")),w;
+// let a=0;
+// for (let i = 2; i <=n/2 ; i++) {
 //     if (n%i==0) {
-//         console.log(n ,"is not a prime number");
-//         document.write(n,"is not a prime number");           
+//     //     console.log(n ,"is not a prime number");
+//     //     document.write(n,"is not a prime number");  
+//         a=1;
 //         break;
-//     }
+//     } 
 // }
-//     console.log(n ,"is a prime number");
-//     document.write(n,"is a prime number");    
-    
-    
+// if(a==0){
+//     console.log(n,"Is a prime number");
+
+// }else {
+//     console.log(n,"Is a not a prime number");
+
+// }
 
 // 17. To find the prime numbers in a range 
+// let n=parseInt(prompt("Enter the range to find prime numbers")),w;
+// let a=0;
+// for(let j=2;j<=n;j++){
 
+//     for (let i = 2; i <=j/2 ; i++) {
+//         if (j%i==0) {
+//         //     console.log(n ,"is not a prime number");
+//         //     document.write(n,"is not a prime number");  
+//             a=1;
+//             break;
+//         }                                    XXXXXXXXXXX 
+//     }
+//     if(a==0){
+//         console.log(j,"Is a prime number");
 
+//     }else {
+//         console.log(j,"Is a not a prime number");
+
+//     }
+// }
 // 18. Print given N numbers in sequence
 // let n = parseInt(prompt("Enter the number to print in sequence"));
 
@@ -235,31 +258,169 @@
 //     document.write(i, ",");
 // }
 
-// Ascending and descending order of given three numbers
+// 20. Ascending and descending order of given three numbers
 
-// let a= parseFloat(prompt("Enter the first value")), b= parseFloat(prompt("Enter the first value")), c= parseFloat(prompt("Enter the first value"));
-// if(a>b){
+// let a= parseFloat(prompt("Enter the first value")), b= parseFloat(prompt("Enter the secound value")), c= parseFloat(prompt("Enter the third value"));
+// if((a>b) && (a>c)){
+//     if(b>c){
+//         console.log("The ascending order is ",c,",",b,",",a);
+//         console.log("The decending order is ",a,",",b,",",c);
+//         document.write("The ascending order is ",c,",",b,",",a);
+//         document.write("The decending order is ",a,",",b,",",c);
+//     } 
+//     else{
+//         console.log("The ascending order is ",b,",",c,",",a);
+//         console.log("The decending order is ",a,",",c,",",b);
+//         document.write("The ascending order is ",b,",",c,",",a);
+//         document.write("The decending order is ",a,",",c,",",b);
+    
+//     }   
+// }
+// if((b>a) && (b>c)){
 //     if(a>c){
-//         console.log(a);
-//     }
+//         console.log("The ascending order is ",c,",",a,",",b);
+//         console.log("The decending order is ",b,",",a,",",c);
+//         document.write("The ascending order is ",c,",",a,",",b);
+//         document.write("The decending order is ",b,",",a,",",c);
+//     } 
 //     else{
-//         console.log(c);
-//     }
+//         console.log("The ascending order is ",a,",",c,",",b);
+//         console.log("The decending order is ",b,",",c,",",a);
+//         document.write("The ascending order is ",a,",",c,",",b);
+//         document.write("The decending order is ",b,",",c,",",a);
+    
+//     }   
 // }
-// if(b>c){
+// if((c>b) && (c>a)){
 //     if(b>a){
-//         console.log(b);
+//         console.log("The ascending order is ",a,",",b,",",c);
+//         console.log("The decending order is ",c,",",b,",",a);
+//         document.write("The ascending order is ",a,",",b,",",c);
+//         document.write("The decending order is ",c,",",b,",",a);
+//     } 
+//     else{
+//         console.log("The ascending order is ",b,",",a,",",c);
+//         console.log("The decending order is ",c,",",a,",",b);
+//         document.write("The ascending order is ",b,",",a,",",c);
+//         document.write("The decending order is ",c,",",a,",",b);
+    
+//     }   
+// }
+// 21. Give grades according to the scored marks
+
+// let marks=parseFloat(prompt("Enter the scored mark to display the grades"));
+// switch (marks) {
+//     case (if(marks>85)):
+//         console.log("He/She has scored a 'A' grade ");
+//         break;
+
+//     // default:
+//     //     break;                  xxxxxxx
+// }
+
+//  22.  To check the marriage eligubility 
+
+// let g,age=parseInt(prompt("Enter the age of the groom/ bride "));
+// g=parseInt(prompt("Type '1' if its groom or '0' if its bride "));
+// if (g){
+//     if (age>=21){
+//         console.log("The groom is ready for marriage");
+//     }else if (age>35){
+//         console.log("The groom should hurry up for marriage");
+//     }else {
+//         console.log("The groom is  not ready for marriage since he is a minor");
+//     }
+
+// }else {
+//     if(age>=18){
+//         console.log("The bride is ready for marriage");
 //     }
 //     else{
-//         console.log(c);
-//     }
-// }                                                                xxxxxxx
-// if(c>a){
-//     if(c>b){
-//         console.log(c);
-//     }
-//     else{
-//         console.log(a);
+//         console.log("The bride is not ready for marriage");
 //     }
 // }
 
+// 23. To find the given number is greater than 10 or not 
+
+// let n=parseFloat(prompt("Enter the number to find whether it's greater thn "));
+// if (n<10) {
+//     console.log("The Given number is lesser than 10");
+// }else if(n==10){
+//     console.log("The Given number is equal to 10");
+// }
+// else{
+//     console.log("The Given number is greater than 10");
+// }
+
+//  24. Addition 
+
+// let x=parseFloat(prompt("Enter the number ")),y=parseFloat(prompt("Enter the number "));
+// console.log("the addition is ",x+y);
+
+//  25. Subtraction 
+
+// let x=parseFloat(prompt("Enter the number ")),y=parseFloat(prompt("Enter the number "));
+// console.log("the subtraction is ",x-y);
+
+// 26. Multiplication
+
+// let x=parseFloat(prompt("Enter the number ")),y=parseFloat(prompt("Enter the number "));
+// console.log("the multiplication is ",x*y);
+
+// 27. Division
+
+// let x=parseFloat(prompt("Enter the number ")),y=parseFloat(prompt("Enter the number "));
+// console.log("the division ",x/y);
+
+// 28. To print the multiplication table of the given number 
+
+// let n=parseInt(prompt("Enter the number to display its multiplication table "));
+// let m= parseInt(prompt("Enter the last number or times u need in multiplication table "));
+// console.log("The multiplication table of ",n,"is");
+// document.write("The multiplication table of ",n,"is/n");
+
+// for (let i = 1; i <=m; i++) {
+//     console.log(n,"*",i,"=",n*i);
+//     document.write(n,"*",i,"=",n*i);
+    
+// }
+
+// 29. To find Sum of a number
+
+// let num,sum=0,rem,n;
+// num=parseInt(prompt("Enter the number to find its sum of itself"));
+// n= parseInt(num);
+// for (let i =num; i >0; i=i/10) {
+//     i=parseInt(i);
+//     rem=i%10;
+//     sum+=rem;
+// }
+// // sum=parseInt(sum);
+// console.log(sum);
+
+// 30. To write a nunmber in reverse order 
+
+// let n=parseInt(prompt("Enter the nummer to be reversed")),rem;
+// console.log("The given number is",n);
+// while(n>0){
+//     n=parseInt(n);
+//     rem=n%10;
+//     n=n/10;                              ???????
+//     console.log(rem);
+// }
+
+// 31. To find the given number is Armstrong or not (153= 1**3+ 5**3+ 3**3)
+
+// let num,sum=0,rem,n;
+// num=parseInt(prompt("Enter the number to find its sum of itself"));
+// n= parseInt(num);
+// for (let i =num; i >0; i=i/10) {
+//     i=parseInt(i);
+//     rem=i%10;
+//     sum=sum+rem**3;
+// }
+// console.log(sum);
+// if(sum==num)
+//     console.log("Given number is an Armstrong Number ");
+// else 
+// console.log("Given number is  not an Armstrong Number ");
