@@ -6,6 +6,13 @@ function tickle() {
     alert(y);
 }
 // DOM manipulation in Text box
+function check_entry(){
+    let username_value=document.getElementById("user-name");
+    if(username_value.value.trim()==""){
+        document.getElementById("user-name-span").insertAdjacentHTML= "Please enter the User name"; 
+        getElementById("user-name").style.border="red 3px solid";
+    }
+}
 function passconfirm(){
     let pass=document.getElementById("password").value;
     let passcon=document.getElementById("confirm-password").value;
@@ -45,4 +52,35 @@ function chng(){
     // para[2].style.color="green";
     for(x=0;x<para.length;x++)
         para[x].style.color="blue";    
+}
+
+// Form Validations
+
+function checkstat(){
+    let user_name= document.getElementById("uname").value;
+    let pass= document.getElementById("pass").value;
+
+    if(user_name.trim()=="" || pass.trim()==""){
+        alert("U have not entered any Entries")
+        return false;
+    }
+    else{
+        return true;
+    }
+}
+
+// Short matrimonial Site
+
+function prev(){
+    let prev_b= document.getElementById("matriimg").src="../../Source/professionalpics.jpg";
+}
+function next(){
+    let next_b= document.getElementById("matriimg").src="../../Source/professionalpics2.jpg";
+}
+// Mouseover and Mouseout Image change
+function newimg(){
+    let new_img= document.getElementById("chngimg").src="../../Source/professionalpics2.jpg";
+}
+function oldimg(){
+    let new_img= document.getElementById("chngimg").src="../../Source/professionalpics.jpg";
 }

@@ -16,12 +16,12 @@
     <h1> DOM manipulation in Text box</h1>
     <form action="">
         <label for="user-name" >User Name</label>
-        <input type="text" id="user-name" placeholder="Enter the username"><br><br>
+        <input type="text" id="user-name" placeholder="Enter the username" oninput="check_entry()" required ><span id="User-name-span"></span><br><br>
         <label for="user-name">Password</label>
-        <input type="password" id="password" placeholder="Password"><br><br>
+        <input type="password" id="password" placeholder="Password" required><br><br>
         <label for="user-name">Confirm Password</label>
-        <input type="password" id="confirm-password" placeholder="Confirm Password" oninput="passconfirm()"><br><br>
-        <p id="pass-stat"></p>
+        <input type="password" id="confirm-password" placeholder="Confirm Password" oninput="passconfirm()" required>
+        <span id="pass-stat"></span><br><br>
         <button type="reset">Reset</button><button type="submit">Submit</button>
     </form>
     <!-- DOM manipulation in Radio button -->
@@ -49,6 +49,8 @@
         </select>
         <br><button onclick="uptstat()">Update me </button>
     </form>
+
+
     <!-- DOM manipulation in Using getElementByClassname  -->
     <h1>DOM manipulation in Using getElementByClassname</h1>
     <p class="manicls"> This is the First Para</p>
@@ -60,6 +62,30 @@
     <p class="manicls"> This is the Last Para</p>
 
     <button onclick="chng()">Apply Changes</button>
+
+    <!-- Form Validation -->
+
+    <form onsubmit="return checkstat()"  action="success.html">
+        <fieldset>
+            <legend>Login in Details</legend>
+            <label for="uname">User Name </label>
+            <input type="text" id="uname" placeholder="Enter the User name"> 
+            <label for="pass" >Password</label>
+            <input type="password" id="pass" placeholder="Enter the Password"><br><br>
+            <button type="submit">Login</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+    <!-- Short Matrimonial site -->
+    <h1>Short Matrimonial site </h1>
+    <button id="prev" onclick="prev()"> Previous</button>
+    <img id="matriimg" src="../../Source/professionalpics1.jpg" width="360px" height="480px">
+    <button id="next" onclick="next()"> Next</button>
+
+    <!-- Mouseover and Mouseout Image change -->
+
+    <h1> Mouseover and Mouseout Image change </h1>
+    <img onmouseover="newimg()" onmouseout="oldimg()" id="chngimg" src="../../Source/professionalpics.jpg" width="360px" height="480px">
 
     <script src="domscripy.js"></script>
 </body>
