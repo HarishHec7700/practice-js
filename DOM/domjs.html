@@ -87,6 +87,37 @@
     <h1> Mouseover and Mouseout Image change </h1>
     <img onmouseover="newimg()" onmouseout="oldimg()" id="chngimg" src="../../Source/professionalpics.jpg" width="360px" height="480px">
 
+    <!-- Form validitation with password condition (atleast 6 characters) -->
+
+    <h1 >Form validitation with password condition (atleast 6 characters)</h1>
+    <form onsubmit="return chkstat()" action="success.html" >
+        <fieldset>
+            <legend>General Information</legend>
+            <label for="usr_name" >User Name</label>
+            <input type="text" id="usr_name" placeholder="Enter the User name" required>
+            <label for="pswrd">Password</label>
+            <input type="password"  id="pswrd" placeholder="Password" required>
+            <label for="c_pswrd">Confirm Password</label>
+            <input type="password" id="c_pswrd" placeholder="Confirm Password" oninput="pswrd_confirm()" required><span id="pswrd_stat"></span><br><br>
+            <button type="submit">Login </button> 
+            <button type="reset">Reset</button>           
+        </fieldset>
+    </form>        
+
+    <!-- Regular Expression -->
+    <h1>Regular Expression</h1>
+    <label for="Email Address"> Email Address</label>
+    <input type="text" id="email" placeholder="Email" required><span id="vali_info" style="color: #f0a00c;"></span><br><br>
+    <button id="val" onclick="validate()"> Validate </button>
+
+    <!--Regular Expression with char set and numbers-->
+    <h1>Regular Expression with char set and numbers</h1>
+    <label for="Email Address"> Email Address</label>
+    <input type="text" id="e_mail" placeholder="Email" required><span id="valid_info" style="color: #f0a00c;"></span><br><br>
+    <button id="vali" onclick="validated()"> Validate </button>
+
+
+
     <script src="domscripy.js"></script>
 </body>
 </html>
