@@ -42,7 +42,7 @@ function getstat(){
 // DOM manipulation in Select box
 function uptstat(){
     var selectbx= document.getElementById("cars");
-    alert("U have Selected the"+selectbx.options[selectedIndex].value);
+    alert("U have Selected the"+selectbx.options[selectbx.selectedIndex].value);
 }
 
 // DOM manipulation by getElementByClassName 
@@ -83,4 +83,66 @@ function newimg(){
 }
 function oldimg(){
     let new_img= document.getElementById("chngimg").src="../../Source/professionalpics.jpg";
+}
+
+// Form validitation with password condition (atleast 6 characters)
+
+function pswrd_confirm(){
+    let psswrd= document.getElementById("pswrd").value;
+    let c_passwrd=document.getElementById("c_pswrd").value;
+    if(psswrd==c_passwrd){
+        document.getElementById("pswrd_stat").innerHTML="The passwords Matches";
+        document.getElementById("c_pswrd").style.border=" rgba(255, 255, 255, 0.555) solid 2px";
+
+    }else{
+        document.getElementById("pswrd_stat").innerHTML="The passwords doesn't Matches";
+        document.getElementById("c_pswrd").style.border="red solid 2px";
+    }
+}
+function chkstat(){
+    let usrname=document.getElementById("usr_name").value;
+    let psswrd= document.getElementById("pswrd").value;
+    if(usrname.trim()==""){
+        alert("Please enter the entries");
+        document.getElementById("usr_name").style.border="red solid 2px";
+        return false;
+    }else if(psswrd.trim()==""){
+        alert("Please enter the Password");
+        return false;
+    }else if(psswrd.trim().length <6){
+        alert("The password should have more than 6 letters");
+        document.getElementById("pswrd").style.border="red solid 2px";
+        return false;
+    }
+    else
+        return true;
+
+}
+
+// Regular Expression 
+// Regular expressions are patterns used to match character combinations in strings. In JavaScript, regular expressions are also objects. 
+// Methods of regular Expression are test(),split(),replace(),replaceAll(),exec(),search(),match(),matchAll()
+function validate(){
+    email= document.getElementById("email").value;
+    regx= /@/;
+    if(regx.test(email)){
+        document.getElementById("vali_info").innerHTML="Valid Email";    
+    }
+    else
+        document.getElementById("vali_info").innerHTML="Invalid Email";    
+
+}
+
+// Regular Expression in alternate method 
+// regx= /[a-z]12/; Here the first char can be anything between a-z and secound and third char shoulc be 12
+regex= RegExp([a-n])
+function validated(){
+    e_mail= document.getElementById("e_mail").value;
+    regex= /[a-n]19/;
+    if(regex.test(e_mail)){
+        document.getElementById("valid_info").innerHTML="Valid Email";    
+    }
+    else
+        document.getElementById("valid_info").innerHTML="Invalid Email";    
+
 }
