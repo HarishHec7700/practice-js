@@ -106,8 +106,8 @@
 
     <!-- Regular Expression -->
     <h1>Regular Expression</h1>
-    <label for="Email Address"> Email Address</label>
-    <input type="text" id="email" placeholder="Email" required><span id="vali_info" style="color: #f0a00c;"></span><br><br>
+    <label for="Email"> Email Address</label>
+    <input type="text" id="email" name="Email" placeholder="Email" required><span id="vali_info" style="color: #f0a00c;"></span><br><br>
     <button id="val" onclick="validate()"> Validate </button>
 
     <!--Regular Expression with char set and numbers-->
@@ -116,7 +116,20 @@
     <input type="text" id="e_mail" placeholder="Email" required><span id="valid_info" style="color: #f0a00c;"></span><br><br>
     <button id="vali" onclick="validated()"> Validate </button>
 
+    <!-- Regular Expression for Mobile Number -->
+    <h1>Regular Expression for Mobile Number</h1>
+    <label for="name">User Name </label>
+    <input type="text" name="name" id="name">
+    <label for="phn">Phone Number</label>
+    <input type="tel" name="phn" id="phn" oninput="vali()"><span id="phn_stat"></span><br><br>
+    <button> Validate</button>
 
+    <!-- Regular Expression for Email -->
+    <h1>Regular Expression for Email</h1>
+    <label for="e_mail">Email:</label>
+    <input type="email" name="e_mail" id="e_mail">
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
 
     <script src="domscripy.js"></script>
 </body>
