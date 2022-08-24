@@ -30,19 +30,19 @@ function getstat(){
 
 
     if(rdmale.checked==true)
-        alert("U have selected the :"+ rdmale.value,"option");
+        alert("U have selected the :"+ rdmale.value +"option");
     else if(rdfemale.checked==true)
-        alert("U have selected the :"+ rdfemale.value,"option");
+        alert("U have selected the :"+ rdfemale.value +"option");
     else if(rdothers.checked==true)
-        alert("U have selected the :"+ rdothers.value,"option");
+        alert("U have selected the :"+ rdothers.value +"option");
     else
         alert("U have not selected anything")        
 
 }
 // DOM manipulation in Select box
 function uptstat(){
-    var selectbx= document.getElementById("cars");
-    alert("U have Selected the"+selectbx.options[selectbx.selectedIndex].value);
+    let selectbx= document.getElementById("cars");
+    alert("U have Selected the "+selectbx.options[selectbx.selectedIndex].value);
 }
 
 // DOM manipulation by getElementByClassName 
@@ -135,8 +135,8 @@ function validate(){
 
 // Regular Expression in alternate method 
 // regx= /[a-z]12/; Here the first char can be anything between a-z and secound and third char shoulc be 12
-regex= RegExp([a-n])
 function validated(){
+    regex= RegExp([a-n])
     e_mail= document.getElementById("e_mail").value;
     regex= /[a-n]19/;
     if(regex.test(e_mail)){
@@ -146,3 +146,17 @@ function validated(){
         document.getElementById("valid_info").innerHTML="Invalid Email";    
 
 }
+
+// Regular Expression for Mobile Number 
+
+function vali(){
+    let phn= document.getElementById("phn").value;
+    reg=/^[7-9][0-9]{8}[0-9]$/
+    if(reg.test(phn))
+        document.getElementById("phn_stat").innerHTML="Valid Phone Number";
+    else
+        document.getElementById("phn_stat").innerHTML="Invalid Phone Number";
+
+}
+
+// Regular Expression for Email 
