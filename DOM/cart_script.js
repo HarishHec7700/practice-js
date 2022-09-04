@@ -14,12 +14,15 @@ unit_price_ele=rowelement.getElementsByClassName("pu_price")[0],
 qty_ele=rowelement.getElementsByClassName("quantity")[0];
 
 pu_price=unit_price_ele.innerText;
+pu_price=Number(pu_price.replace(/,/g,'')); // To Replace the the , in string (2,000) to Number  
+// console.log(pu_price.typeof());
 pu_price=parseInt(pu_price);
 qty=qty_ele.options[qty_ele.selectedIndex].value
 let price_ele=rowelement.getElementsByClassName("price")[0];
-console.log(qty);
+// console.log(qty);
 // Formulae
 price=pu_price*qty;
+price=price.toLocaleString("en");   // To Replace the Number to the format of string (2,000) 
 price_ele.innerHTML=price;
 }
 // document.getElementById("quantity").addEventListener("change",calc);
